@@ -39,7 +39,6 @@
 ## 설명
 
 <aside>
-💡
 
 ## **1. 순수 Servlet 요청 처리 방법**
 
@@ -440,14 +439,10 @@ public class WebConfig implements WebMvcConfigurer {
 
 ```
 
-### Git Source 주소
-
-- [https://github.com/sweetpark/Project_DispatcherServlet](https://github.com/sweetpark/Project_DispatcherServlet)
 
 ### 블로그 정리 주소
 
 <aside>
-💡
 
 - Servlet + JSP MVC 적용
     - [https://gradualprecision.tistory.com/76](https://gradualprecision.tistory.com/76)
