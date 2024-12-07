@@ -3,6 +3,7 @@
 생성일: 2024년 11월 20일 오후 11:21
 
 ## SPRING 프레임워크 제작
+<img width="936" alt="image" src="https://github.com/user-attachments/assets/ea6cf3b2-0cab-4a65-8c3e-f5583c435a47">
 
 <aside>
 💡
@@ -20,11 +21,11 @@
     - Spring에서 Servlet을 사용하는 구간
     - Spring에서 Adapter의 역할
 
-![image.png](Spring%20%E1%84%80%E1%85%AE%E1%84%92%E1%85%A7%E1%86%AB%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3%20c4d9499ba736426b89fed1ef66af36fe/image.png)
+
 
 ## 구현 이미지
+![image 1](https://github.com/user-attachments/assets/41350f57-dbc7-4749-bb10-f4598fc03a82)
 
-![image.png](Spring%20%E1%84%80%E1%85%AE%E1%84%92%E1%85%A7%E1%86%AB%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3%20c4d9499ba736426b89fed1ef66af36fe/image%201.png)
 
 ## 설명
 
@@ -36,7 +37,8 @@
 - Response html 직접 작성
 </aside>
 
-![image.png](Spring%20%E1%84%80%E1%85%AE%E1%84%92%E1%85%A7%E1%86%AB%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3%20c4d9499ba736426b89fed1ef66af36fe/image%202.png)
+<img width="426" alt="image 2" src="https://github.com/user-attachments/assets/7087ba93-e7d4-4025-9ff8-c833e833c9ea">
+
 
 - HttpServlet을 이용하여, Service를 오버로딩하여 요청에 대한 처리 응답을 작성한다
 - HttpServletRequest를 통해 요청을 받고, HttpServletResponse를 이용해서 응답을 실행
@@ -81,7 +83,8 @@ public class MemberSaveServlet extends **HttpServlet** {
 - jsp 이용 (+ RequestDispatcher)
 </aside>
 
-![image.png](Spring%20%E1%84%80%E1%85%AE%E1%84%92%E1%85%A7%E1%86%AB%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3%20c4d9499ba736426b89fed1ef66af36fe/image%203.png)
+<img width="505" alt="image 3" src="https://github.com/user-attachments/assets/eb2ab760-1946-4824-ba45-8633ca5e1b57">
+
 
 - RequestDispatcher를 이용하여, 요구한 요청에 맞는 페이지를 리다이렉트해준다.
     - response.sendRedirect()를 이용할경우, 리다이렉트 이후 해당 url에 대해 브라우저가 재요청하기에 2번의 요청이 생길 수 있기에 RequestDispatcher를 이용하여 한번의 요청으로 처리할 수 있도록 구현
@@ -107,7 +110,8 @@ public class MvcMemberFormServlet extends HttpServlet {
 - Handler Mapping을 통해, 원하는 Controller 호출
 </aside>
 
-![image.png](Spring%20%E1%84%80%E1%85%AE%E1%84%92%E1%85%A7%E1%86%AB%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3%20c4d9499ba736426b89fed1ef66af36fe/image%204.png)
+<img width="624" alt="image 4" src="https://github.com/user-attachments/assets/5d52e210-4aba-42b1-8d2d-a00b768fa8a0">
+
 
 ### 버전 1
 
@@ -284,7 +288,8 @@ public class FrontControllerServletV4 extends HttpServlet {
 - 인터페이스 활용
     - Adapater의 handle() / support() 메서드는 인터페이스에 있으므로 캐스팅을 통해서 구현체를 호출 할 수 있다 (따라서, 인터페이스가 없다면 효율적으로 구현할 수 없다)
 
-![image.png](Spring%20%E1%84%80%E1%85%AE%E1%84%92%E1%85%A7%E1%86%AB%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3%20c4d9499ba736426b89fed1ef66af36fe/image%205.png)
+<img width="656" alt="image 5" src="https://github.com/user-attachments/assets/76572a11-cfa0-4e97-8f8e-b97698505bf7">
+
 
 ```java
 @WebServlet(name="frontControllerServletV5", urlPatterns = "/front-controller/v5/*")
@@ -363,7 +368,7 @@ public class FrontControllerServletV5 extends HttpServlet {
 - 어노테이션을 이용한 Controller호출
 </aside>
 
-![image.png](Spring%20%E1%84%80%E1%85%AE%E1%84%92%E1%85%A7%E1%86%AB%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3%20c4d9499ba736426b89fed1ef66af36fe/image%206.png)
+<img width="615" alt="image 6" src="https://github.com/user-attachments/assets/b8d7d500-4d2d-4f91-a265-0a0479265121">
 
 - 어노테이션
     - @Controller : spring이 빈에 등록하여 Controller로서 인식
