@@ -8,7 +8,7 @@
 	- ServletApplication (Main Class)실행
 
 	2. WAR파일 실행
-	- ROOT.war 파일 tomcat서버에 이동 후 구동
+	- /build/libs/ROOT.war 파일 tomcat서버에 이동 후 구동
 </pre>
 
 ## SPRING 프레임워크 제작
