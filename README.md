@@ -2,6 +2,15 @@
 
 생성일: 2024년 11월 20일 오후 11:21
 
+## 프로그램 구동
+<pre>
+	1. IDE를 이용한 실행
+	- ServletApplication (Main Class)실행
+
+	2. WAR파일 실행
+	- ROOT.war 파일 tomcat서버에 이동 후 구동
+</pre>
+
 ## SPRING 프레임워크 제작
 <img width="936" alt="image" src="https://github.com/user-attachments/assets/ea6cf3b2-0cab-4a65-8c3e-f5583c435a47">
 
