@@ -20,6 +20,10 @@ configurations {
 	}
 }
 
+bootWar{
+	archiveFileName = 'ROOT.war'
+}
+
 repositories {
 	mavenCentral()
 }
